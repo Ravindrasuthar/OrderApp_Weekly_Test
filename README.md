@@ -32,6 +32,8 @@ _**Services**:_ The services layer contains the business logic of the applicatio
 
 _**Repository:**_ The repository layer is responsible for interacting with the database. It uses Spring Data JPA to perform CRUD (create, read, update, delete) operations on entities.
 
+In the application.properties all the text required for connection with h2 database are written.
+
 # Database Structure Used
 I have used MySQL as DataBase.
 
