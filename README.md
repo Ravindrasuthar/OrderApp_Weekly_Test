@@ -9,7 +9,7 @@ Order App (Weekly Test)
 # Data Flow
 
 
-_**Controller:**_ The controller has endpoints for adding a user, product, address, order , get user by id, get order by id, get product by category, delete product based on id. The @PostMapping annotation is used for the addUser, addProduct, addAddress, addOrder endpoint to handle HTTP POST requests with a JSON request body containing a user object. 
+_**Controller:**_ The controller has endpoints for adding a user, product, address, order , get user by id, get order by id, get product by category, delete product based on id. The @PostMapping annotation is used for the addUser, addProduct, addAddress, addOrder endpoint to handle HTTP POST requests with a JSON request body containing a Entity object. 
 ```
 ```
 ```
