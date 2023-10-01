@@ -10,14 +10,6 @@ Order App (Weekly Test)
 
 
 _**Controller:**_ The controller has endpoints for adding a user, product, address, order , get user by id, get order by id, get product by category, delete product based on id. The @PostMapping annotation is used for the addUser, addProduct, addAddress, addOrder endpoint to handle HTTP POST requests with a JSON request body containing a Entity object. 
-```
-```
-```
-```
-```
-```
-```
-```
 
 The @GetMapping annotation is used for the get/all/userby/id/{Id}, get/all/product/by/category/{category} and get/order/by/id/{Id} endpoints to handle HTTP GET requests with and without a path variable for the userId, productCategory, orderId. The @PathVariable annotation is used to extract the user ID, order ID from the request URL and pass it to the GetUserById and GetOrderById method.
 
