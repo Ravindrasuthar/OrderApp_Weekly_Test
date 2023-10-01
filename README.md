@@ -9,15 +9,23 @@ Order App (Weekly Test)
 # Data Flow
 
 
-_**Controller:**_ The controller has endpoints for adding a user, getting all users, getting a user by their ID, and deleting a user by their ID. The @PostMapping annotation is used for the addUser endpoint to handle HTTP POST requests with a JSON request body containing a user object. The @Valid annotation is used to validate the user object against any defined validation constraints.
+_**Controller:**_ The controller has endpoints for adding a user, product, address, order , get user by id, get order by id, get product by category, delete product based on id. The @PostMapping annotation is used for the addUser, addProduct, addAddress, addOrder endpoint to handle HTTP POST requests with a JSON request body containing a user object. 
+```
+```
+```
+```
+```
+```
+```
+```
 
-The @GetMapping annotation is used for the getAllUserList and getUserByUserId endpoints to handle HTTP GET requests with and without a path variable for the user ID, respectively. The @PathVariable annotation is used to extract the user ID from the request URL and pass it to the getUserById method.
+The @GetMapping annotation is used for the get/all/userby/id/{Id}, get/all/product/by/category/{category} and get/order/by/id/{Id} endpoints to handle HTTP GET requests with and without a path variable for the userId, productCategory, orderId. The @PathVariable annotation is used to extract the user ID, order ID from the request URL and pass it to the GetUserById and GetOrderById method.
 
-The @DeleteMapping annotation is used for the deleteUserById endpoint to handle HTTP DELETE requests with a path variable for the user ID.
+The @DeleteMapping annotation is used for the delete/product/by/id/{Id} endpoint to handle HTTP DELETE requests with a path variable for the product ID.
 
-The controller class also has an autowired instance of the UserService interface to handle business logic for the User Management System.
+The controller class also has an autowired instance of the UserService, ProductService, AddressService, OrderService interface to handle business logic for the Order App.
 
-This implementation demonstrates a basic setup for a REST API controller in Spring Boot, but it can be expanded upon and customized based on specific requirements for the User Management System.
+This implementation demonstrates a basic setup for a REST API controller in Spring Boot, but it can be expanded upon and customized based on specific requirements for the Order App.
 
 
 _**Services**:_ The services layer contains the business logic of the application. It receives requests from the controller, performs necessary computations or data manipulations, and interacts with the repository layer to access data.
