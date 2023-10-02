@@ -13,7 +13,7 @@ public class ProductController {
     @Autowired
     ProductService productService;
 
-    @RequestMapping("add/product")
+    @PostMapping("add/product")
     public String AddProduct(@RequestBody ProductModel productModel)
     {
         return productService.AddProduct(productModel);

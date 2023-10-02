@@ -11,7 +11,7 @@ public class UserController {
     @Autowired
     UserService userService;
 
-    @RequestMapping("add/user")
+    @PostMapping("add/user")
     public String AddUser(@RequestBody UserModel userModel)
     {
         return userService.AddUser(userModel);

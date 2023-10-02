@@ -13,7 +13,7 @@ public class OrderController {
     @Autowired
     OrderService orderService;
 
-    @RequestMapping("add/order")
+    @PostMapping("add/order")
     public String AddOrder(@RequestBody OrderModel orderModel)
     {
         return orderService.AddOrder(orderModel);
